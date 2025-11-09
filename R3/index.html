@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de la persona Usuaria</title>
+    <!-- Importa Montserrat (alternativa a Visby) y Open Sans de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Importa la hoja de estilos principal -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal central con efecto liquid glass -->
+    <div class="glass-container">
+        <h1 id="form-title">Registro de la persona usuaria</h1>
+        <form id="registro-form">
+
+            <!-- Campo: Nombre -->
+            <label for="nombre">Nombre (s) <font color="red">*</font></label>
+            <input type="text" id="nombre" name="nombre" class="input-field" required>
+
+            <!-- Campo: Apellido -->
+            <label for="apellido">Apellido (s) <font color="red">*</font></label>
+            <input type="text" id="apellido" name="apellido" class="input-field" required>
+
+            <!-- Campo: Correo electrónico -->
+            <label for="correo">Correo Electrónico <font color="red">*</font></label>
+            <input type="email" id="correo" name="correo" class="input-field" required>
+
+            <!-- Campo: Contraseña -->
+            <label for="contraseña">Contraseña <font color="red">*</font></label>
+            <input type="password" id="contraseña" name="contraseña" class="input-field" required>
+
+            <!-- Área de texto para descripción -->
+            <label for="descripcion">Descripción breve</label>
+            <textarea id="descripcion" name="descripcion" class="textarea-field" rows="4"></textarea>
+
+            <!-- Opciones de intereses -->
+            <div class="intereses-section">
+                <span>Selecciona tus intereses (todos los que apliquen)</span>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="intereses" value="Tecnología"> Tecnología
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="intereses" value="Arte"> Arte
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="intereses" value="Deporte"> Deporte
+                </label>
+
+                <label class="checkbox-label">
+                    <input type="checkbox" name="intereses" value="Ciencia"> Otros
+            </div>
+
+            <!-- Botón de envío -->
+            <button type="submit" id="boton-registrar">Registrarse</button>
+        </form>
+    </div>
+</body>
+</html>
